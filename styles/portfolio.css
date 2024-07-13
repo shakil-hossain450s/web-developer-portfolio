@@ -256,3 +256,63 @@ textarea {
     width: 100%;
     outline: 0;
 }
+
+/* responsive styles */
+.hide {
+    display: none;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+
+    #what-i-do-description {
+        padding: 20px;
+    }
+
+    .banner,
+    nav,
+    nav>ul,
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-info-container {
+        flex-direction: column;
+    }
+
+    nav > ul {
+        gap: 20px;
+    }
+
+    .banner-greeting{
+        font-size: 36px;
+    }
+    .banner-title{
+        font-size: 48px;
+    }
+
+    .banner .profile-picture {
+        width: 100%;
+    }
+
+    footer,
+    .about, .banner {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+}
